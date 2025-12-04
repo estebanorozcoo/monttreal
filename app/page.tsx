@@ -162,7 +162,7 @@ export default async function HomePage() {
             { 
               name: t('catJackets'),
               category: 'Chaquetas',
-              image: 'https://res.cloudinary.com/djvdj8xmk/image/upload/v1764862987/WhatsApp_Image_2025-12-04_at_10.29.51_uvgeqj.jpg'
+              image: ''
             },
           ].map((item) => (
             <Link 
