@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Monttreal - Vestuario de Calidad',
+  title: 'Monttreal',
   description: '| Prendas exclusivas',
 };
 

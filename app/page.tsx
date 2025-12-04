@@ -147,26 +147,41 @@ export default async function HomePage() {
               {t('collectionsTitle')}
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-20">
             {[
-              { name: t('catTshirts'), category: 'Camisetas', color: 'from-rose-400 to-rose-600' },
-              { name: t('catPants'), category: 'Pantalones', color: 'from-blue-400 to-blue-600' },
-              { name: t('catDresses'), category: 'Vestidos', color: 'from-purple-400 to-purple-600' },
-              { name: t('catJackets'), category: 'Chaquetas', color: 'from-amber-400 to-amber-600' },
-            ].map((item) => (
-              <Link 
-                key={item.category} 
-                href={`/shop?category=${item.category}`}
-                className="group"
+            { 
+              name: t('catTshirts'), 
+              category: 'Camisetas',
+              image: 'https://res.cloudinary.com/djvdj8xmk/image/upload/v1764862986/WhatsApp_Image_2025-12-04_at_10.27.46_nphprl.jpg'
+            },
+            { 
+              name: t('catPants'),
+              category: 'Pantalones',
+              image: 'https://res.cloudinary.com/djvdj8xmk/image/upload/v1764862987/WhatsApp_Image_2025-12-04_at_10.28.54_z9u33u.jpg'
+            },
+            { 
+              name: t('catJackets'),
+              category: 'Chaquetas',
+              image: 'https://res.cloudinary.com/djvdj8xmk/image/upload/v1764862987/WhatsApp_Image_2025-12-04_at_10.29.51_uvgeqj.jpg'
+            },
+          ].map((item) => (
+            <Link 
+              key={item.category} 
+              href={`/shop?category=${item.category}`}
+              className="group"
+            >
+              <div
+                className="aspect-[4/5] rounded-2xl p-6 flex flex-col justify-end relative overflow-hidden transition-transform hover:scale-105 bg-cover bg-center"
+                style={{ backgroundImage: `url('${item.image}')` }}
               >
-                <div className={`aspect-[4/5] rounded-2xl bg-gradient-to-br ${item.color} p-6 flex flex-col justify-end relative overflow-hidden transition-transform hover:scale-105`}>
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors" />
-                  <h3 className="text-white text-xl font-bold relative z-10">{item.name}</h3>
-                  <p className="text-white/80 text-sm relative z-10">{t('viewCollection')}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors" />
+                <h3 className="text-white text-xl font-bold relative z-10">{item.name}</h3>
+                <p className="text-white/80 text-sm relative z-10">{t('viewCollection')}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
         </div>
       </section>
 
