@@ -1,0 +1,212 @@
+$primary: #006B5A;
+$primary-dark: #005648;
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 4rem 0 0;
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+}
+
+.brandSection {
+  .logoLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+  }
+
+  .logoImage {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+
+  .logoText {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary;
+    letter-spacing: 1px;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 1rem;
+    font-weight: 500;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    margin: 0 0 1.5rem;
+    max-width: 280px;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $primary;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.linksSection {
+  .sectionTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 0.75rem;
+
+    a {
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.contactSection {
+  .sectionTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.875rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+
+    svg {
+      color: $primary;
+      flex-shrink: 0;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.newsletter {
+  .newsletterText {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+
+  p {
+    margin: 0;
+  }
+}
+
+.legal {
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

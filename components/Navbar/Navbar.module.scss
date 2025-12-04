@@ -1,0 +1,149 @@
+$primary: #006B5A;
+$primary-dark: #005648;
+
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $primary;
+  letter-spacing: 1px;
+}
+
+.desktopMenu {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.cartLink {
+  position: relative;
+  color: #333;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.cartBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: $primary;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  padding: 0.5rem;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-top: 1px solid #eaeaea;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileLink {
+  padding: 0.75rem 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.mobileLangSwitcher {
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 0.5rem;
+}
+
