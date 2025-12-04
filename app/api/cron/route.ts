@@ -3,6 +3,9 @@ import { sendDailyCronEmail } from '@/lib/nodemailer';
 
 // This endpoint can be called by a cron job service (e.g., Vercel Cron, Railway, etc.)
 // Set up a daily trigger at your preferred time
+
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: NextRequest) {
   try {
     // Verify cron secret for security (optional but recommended)
