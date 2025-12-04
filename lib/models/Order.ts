@@ -9,7 +9,7 @@ export interface IOrderItem {
 }
 
 export interface IOrder extends Document {
-  _id: string;
+  
   userId: string;
   items: IOrderItem[];
   total: number;

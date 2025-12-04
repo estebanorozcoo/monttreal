@@ -6,7 +6,6 @@ export interface ICartItem {
 }
 
 export interface ICart extends Document {
-  _id: string;
   userId: string;
   items: ICartItem[];
   createdAt: Date;

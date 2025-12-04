@@ -4,13 +4,14 @@ import { HeroUIProvider } from '@heroui/react';
 import { SessionProvider } from 'next-auth/react';
 import { NextIntlClientProvider } from 'next-intl';
 import { ToastContainer } from 'react-toastify';
+// @ts-ignore
 import 'react-toastify/dist/ReactToastify.css';
 import { CartProvider } from '@/lib/cart-context';
 
 interface ProvidersProps {
   children: React.ReactNode;
   locale: string;
-  messages: Record<string, unknown>;
+  messages: any;
 }
 
 export default function Providers({ children, locale, messages }: ProvidersProps) {

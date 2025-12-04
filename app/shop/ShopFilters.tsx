@@ -58,11 +58,11 @@ export default function ShopFilters({
         isDisabled={isPending}
       >
         {[
-          <SelectItem key="all" value="all">
+          <SelectItem key="all">
             {t('all')}
           </SelectItem>,
           ...categories.map((cat) => (
-            <SelectItem key={cat} value={cat}>
+            <SelectItem key={cat}>
               {cat}
             </SelectItem>
           )),

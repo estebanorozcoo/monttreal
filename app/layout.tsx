@@ -4,7 +4,8 @@ import { cookies } from 'next/headers';
 import Providers from '@/components/providers/Providers';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import './globals.css?used';
+// @ts-ignore
+import './globals.css';
 
 const poppins = Poppins({
   subsets: ['latin'],
