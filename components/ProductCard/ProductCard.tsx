@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Card, CardBody, CardFooter, Button } from '@heroui/react';
 import { toast } from 'react-toastify';
-import { useCart } from '@/lib/cart-context';
+import { useCart } from '@/lib/cartcontext';
 import styles from './ProductCard.module.scss';
 
 interface ProductCardProps {

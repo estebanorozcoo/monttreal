@@ -6,7 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { ToastContainer } from 'react-toastify';
 // @ts-ignore
 import 'react-toastify/dist/ReactToastify.css';
-import { CartProvider } from '@/lib/cart-context';
+import { CartProvider } from '@/lib/cartcontext';
 
 interface ProvidersProps {
   children: React.ReactNode;

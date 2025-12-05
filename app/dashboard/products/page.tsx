@@ -15,7 +15,7 @@ import {
 } from '@heroui/react';
 import { toast } from 'react-toastify';
 import { FiEdit, FiTrash2, FiPlus } from 'react-icons/fi';
-import ProductModal from '@/components/ProductModal';
+import ProductModal from '@/components/productmodal';
 
 interface Product {
   _id: string;

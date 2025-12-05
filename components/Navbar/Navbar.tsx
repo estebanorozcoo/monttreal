@@ -7,7 +7,7 @@ import { useSession, signOut } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@heroui/react';
 import { FiShoppingCart, FiMenu, FiX } from 'react-icons/fi';
-import { useCart } from '@/lib/cart-context';
+import { useCart } from '@/lib/cartcontext';
 import LanguageSwitcher from './LanguageSwitcher';
 import styles from './Navbar.module.scss';
 

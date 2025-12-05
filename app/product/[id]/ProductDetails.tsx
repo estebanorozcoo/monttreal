@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { Button, Card } from '@heroui/react';
 import { toast } from 'react-toastify';
 import { FiMinus, FiPlus } from 'react-icons/fi';
-import { useCart } from '@/lib/cart-context';
+import { useCart } from '@/lib/cartcontext';
 
 interface Product {
   _id: string;
